@@ -26,12 +26,13 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class ToCreateAndVerifyContactsTest extends BaseClass{
 
 	@Test(groups="SmokeTest",retryAnalyzer = com.crm.genericutility.RetryAnalyserImp.class)
-	public  void toCreateAndVerifyContactsTest() throws IOException, InterruptedException {
-
-		//to get random number
+	public  void toCreateAndVerifyContactsTest() throws IOException, InterruptedException 
+		
+	{
+		//(Hey hii)
 		int randomNum = java.getRandomNumber();
 
-		//to get data from excel
+		//to get the data from excel
 		String mr = excel.getValueFromExcel("Contacts",2,10);
 		String firstName = excel.getValueFromExcel("Contacts",1,2)+randomNum; 
 		String lastName = excel.getValueFromExcel("Contacts",1,3)+randomNum;

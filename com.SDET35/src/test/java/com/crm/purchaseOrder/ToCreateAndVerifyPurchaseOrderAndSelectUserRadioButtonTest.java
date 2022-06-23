@@ -47,7 +47,7 @@ public class ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest extends 
 	public void toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest() throws EncryptedDocumentException, IOException {
 
 
-		//to get the random number
+		//to get the random number(.......................)
 		Random random=new Random();
 		int randomNum = random.nextInt(1000);
 
@@ -69,7 +69,8 @@ public class ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest extends 
 		//Click on Products link
 		HomePage home=new HomePage(driver);
 		home.productsLink();
-
+		
+                 //create an object
 		ProductsPage product=new ProductsPage(driver);
 		product.createNewProductsLookUpImg();
 
@@ -79,7 +80,7 @@ public class ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest extends 
 		newProduct.manufacturer(manufacturer);
 		newProduct.saveBtn();
 
-
+//hi all
 		ProductsInfoPage info=new ProductsInfoPage(driver);
 		String productTitle = info.getProduct().getText();
 
